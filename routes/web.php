@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PagesController;
-use App\Http\Controllers\PostsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,8 +13,10 @@ use App\Http\Controllers\PostsController;
 |
 */
 
+Route::get('/', function () {
+    return view('welcome');
+});
 
-Route::get('/', [PagesController::class, 'index']);
-Route::get('/about', [PagesController::class, 'about']);
+Auth::routes();
 
-Route::resource('posts', PostsController::class);
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
