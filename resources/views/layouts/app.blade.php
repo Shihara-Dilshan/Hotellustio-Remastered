@@ -61,7 +61,7 @@
             color: #08f;
         }
         .newsletter{
-            background: url("https://raw.githubusercontent.com/Shihara-Dilshan/Hotellustio-php-mySQL/master/assets/images/marina-bay-sands-1920x1080-infinity-pool-pool-hotel-travel-booking-336.jpg") center center no-repeat;
+            background: url("https://raw.githubusercontent.com/Shihara-Dilshan/Hotellustio-php-mySQL/master/assets/images/conroom.jpg") center center no-repeat;
             background-size: cover;
             margin: 0;
             padding:50px 0 50px 0;
@@ -72,8 +72,8 @@
         }
         .subfoot{
             padding: 40px 0;
-            background:#0066ff;
-            color:#fff;
+            background: #ffffff;
+            color: #000000;
         }
         .subfoot .row{
             padding:20px;
@@ -85,14 +85,14 @@
             text-align: center;
         }
         .subfoot a{
-            color:#fff;
+            color: #000000;
         }
         .footer p{
             text-align: center;
             font-weight: bold;
             padding:20px;
-            background: #0088ff;
-            color:#fff;
+            background: #ffffff;
+            color: #000000;
             margin-bottom:0;
         }
     </style>
@@ -174,13 +174,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-8">
-                        <h1>Lorem Ipsum</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae minus illum quia aut sed, aspernatur ducimus cupiditate totam quod maxime repudiandae nemo similique tempora, quisquam delectus nisi distinctio quis optio.</p>
+
+                        <p>The story of HOTEL LUSTRIO INN Colombo which opened its doors in 1984 is a splendid tale of continual improvement of product and the highest standards of quality in hospitality. Having embraced over 3 decades of expertise in hospitality our vision and beliefs are firmly grounded in extending a true personalized service to all our guests, laced with an unforgettable luxury hotel experience. The brand has enticed many elite personalities from around the world including heads of government, prime ministers of leading nations, royalty, well known sports and entertainment personalities and many more. </p>
                     </div>
-                    <div class="col-4">
-                        <div><i class="fas fa-envelope"></i> <a href="#">Mail us</a></div><br>
-                        <div><i class="fas fa-phone-volume"></i> <a href="#">Contact us</a></div><br>
-                        <div><i class="fas fa-pencil-alt"></i> <a href="#">Subscribe</a></div><br>
+                    <div class="col-4" style="display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start;">
+                        <div><i class="fas fa-envelope"></i> <a href="#">Mail us: hotellustrio@gmail.com</a></div><br>
+                        <div><i class="fas fa-phone-volume"></i> <a href="#">Contact us: +94750935556</a></div><br>
+                        <div><i class="fas fa-pencil-alt"></i> <a href="#">Subscribe: youtube.com/hotellustrio</a></div><br>
                     </div>
                 </div>
             </div>
@@ -188,7 +188,7 @@
 
 
         <footer class="footer">
-            <p>Copyright &copy; 2017-2018</p>
+            <p>Copyright &copy; {{date("Y")}}</p>
         </footer>
     </div>
 </body>
